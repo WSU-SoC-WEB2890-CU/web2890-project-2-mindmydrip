@@ -4,27 +4,46 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
+.navbar {
+    background-color: #3f6421;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    font-size: x-large;
-    
+    padding: 10px;
 }
 
-header img {
-    max-width: 100px; 
-    max-height: 100px; 
-    margin-right: 20px; 
-    border-radius: 10%;
+.navbar-brand {
+    display: flex;
+    align-items: center;
 }
 
-.hero-section {
+.navbar-brand img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+    margin-left: 150px; /* Add some space between the logo and title */
+}
+
+.navbar-title {
+    flex-grow: 1; /* Allow the title to take up remaining space */
     text-align: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0; /* Disable auto-growing for the collapse element */
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin: 10px;
+    padding: 10px;
 }
 
 nav {
@@ -36,10 +55,10 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 10px;
+    display: flex;
 }
 
 nav li {
-    display: inline;
     margin: 10px;
     padding: 10px;
 }
@@ -51,6 +70,9 @@ nav a {
 
 .content {
     padding: 20px;
+    margin: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .product {
@@ -80,15 +102,16 @@ footer {
 }
 
 .aboutme-text {
+    font-weight: 300;
     font-size: x-large;
-    padding: 2em;
+    padding: 3em;
 }
 
 
 .btn-primary {
     background-color: #3f6421 !important; /* Important to override Bootstrap */
     color: #fff !important; /* Important to override Bootstrap */
-    border: 2px solid #8B4513 !important; /* Important to override Bootstrap */
+    border: 2px solid #fff !important; /* Important to override Bootstrap */
     transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
   }
   
@@ -139,7 +162,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-  
+.product-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.product:hover .product-description {
+    display: block;
+}
+
+.product-toggle {
+    cursor: pointer;
+    color: #3f6421;
+    text-decoration: underline;
+}  
   
   
   

@@ -9,17 +9,25 @@
     <title>About Me</title>
 </head>
 <body>
-    <header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
         <img src="Hi hopes logo.jpg" alt="Hi-Hopes Logo" class="logo-img">
-        <h1>Hi-Hopes by Hollie Estes</h1>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="btn btn-primary">Home</a></li>
-          <li><a href="products.html" class="btn btn-primary">Products</a></li>
-          <li><a href="about.html" class="btn btn-primary">About Me</a></li>
+        <h1 class="navbar-title">Hi-Hopes by Hollie Estes</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="btn btn-primary">Home</a></li>
+          <li class="nav-item"><a href="products.html" class="btn btn-primary">Products</a></li>
+          <li class="nav-item"><a href="about.html" class="btn btn-primary">About Me</a></li>
+          <li class="nav-item"><a href="contact.html" class="btn btn-primary">Contact</a></li>
         </ul>
-      </nav>
+      </div>
+    </div>
+  </nav>
     <section class="content">
         <h2>About my Small Business and my family.</h2>
         <p class="aboutme-text">I'm Hollie Estes, and I'm a proud Utah native. Living in this beautiful state has filled me with inspiration from the stunning natural landscapes that surround us. I'm not just a small business owner; I'm a mother of two wonderful girls and a spirited boy, and they are the true source of my motivation.
@@ -28,8 +36,28 @@
             <br>
             Drawing on the breathtaking landscapes of Utah, I create handcrafted garlands and decorative pieces that are deeply rooted in the rich and earthy tones of this state. Every piece I create is a reflection of my commitment to quality and attention to detail, and they carry with them the warmth of my family and our Utah home. When you bring home a Hi-Hopes garland, you're not just getting a beautifully handcrafted decor piece; you're welcoming a slice of Utah's beauty and my family's love into your own space.</p>
     </section>
-    <footer>
-        &copy; 2023 Your Small Business
+    <footer class="text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Contact Us</h5>
+            <p>Email: info@hihopes.com</p>
+            <div class="social-icons">
+              <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+              <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light">Home</a></li>
+              <li><a href="products.html" class="text-light">Products</a></li>
+              <li><a href="about.html" class="text-light">About Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
